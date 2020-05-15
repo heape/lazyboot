@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>lazyboot</title>
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="src/assets/lib/mdb-4.5.16/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="src/assets/lib/mdb-4.5.16/css/mdb.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="src/assets/css/style.css" rel="stylesheet">
+    <link href="src/assets/css/frame.css" rel="stylesheet">
+</head>
+
+<body class="fixed-sn dark-bg" aria-busy="true">
+    <!-- Frame -->
+    <div class="bg-dark" style="height: 4px;"></div>
+    <div
+        class="typeWindows-1za-n7 titleBar-AC4pGV horizontalReverse-3tRjY7 flex-1O1GKY directionRowReverse-m8IjIq justifyStart-2NDFzi alignStretch-DpGPf3 mt-0 bg-dark">
+        <div id="TitleBarClose"
+            class="winButtonClose-1HsbF- winButton-iRh8-Z flexCenter-3_1bcw flex-1O1GKY justifyCenter-3D2jYp alignCenter-1dQNNs">
+            <svg name="TitleBarClose" width="12" height="12" viewBox="0 0 12 12">
+                <polygon fill="#ffffff" fill-rule="evenodd"
+                    points="11 1.576 6.583 6 11 10.424 10.424 11 6 6.583 1.576 11 1 10.424 5.417 6 1 1.576 1.576 1 6 5.417 10.424 1">
+                </polygon>
+            </svg></div>
+        <div id="TitleBarMaximize"
+            class="winButtonMinMax-PBQ2gm winButton-iRh8-Z flexCenter-3_1bcw flex-1O1GKY justifyCenter-3D2jYp alignCenter-1dQNNs">
+            <svg name="TitleBarMaximize" width="12" height="12" viewBox="0 0 12 12">
+                <rect width="9" height="9" x="1.5" y="1.5" fill="none" stroke="#ffffff"></rect>
+            </svg></div>
+        <div id="TitleBarMinimize"
+            class="winButtonMinMax-PBQ2gm winButton-iRh8-Z flexCenter-3_1bcw flex-1O1GKY justifyCenter-3D2jYp alignCenter-1dQNNs">
+            <svg name="TitleBarMinimize" width="12" height="12" viewBox="0 0 12 12">
+                <rect fill="#ffffff" width="10" height="1" x="1" y="6"></rect>
+            </svg>
+        </div>
+        <div class="mr-auto">
+            <img id="logo" src="src/assets/images/logo.svg" class="img-fluid" width="70px"
+                style="position: relative; top: -6px; margin-left: 8px;">
+        </div>
+    </div>
+    <!-- Frame -->
+    <!-- Start your project here-->
+    <div style="display: none; height: 100vh">
+        <div class="flex-center flex-column">
+            <h1 class="animated fadeIn mb-2">Suping</h1>
+
+            <h5 class="animated fadeIn mb-1">感謝します。</h5>
+
+            <p class="animated fadeIn text-muted">Suping Team</p>
+        </div>
+    </div>
+    <!-- /Start your project here-->
+    <!--Main Navigation-->
+    <header style="display: none">
+        <!-- Sidebar navigation -->
+        <div id="slide-out" class="side-nav sn-bg-2 fixed" style="transform: translateX(-100%);">
+            <ul class="custom-scrollbar">
+                <!-- Logo -->
+                <li>
+                    <div class="logo-wrapper waves-light waves-light" style="height: 100px;">
+                        <a href="#"><img src="src/assets/images/logo.svg" class="img-fluid flex-center"
+                                style="margin-left: 10px; padding-top: 9%; padding-bottom: 9%;"></a>
+                    </div>
+                </li>
+                <!--/. Logo -->
+                <!--Social-->
+                <li>
+                    <ul class="social">
+                        <!--
+                        <li><a href="#" class="icons-sm fb-ic"><i class="fa fa-facebook"> </i></a></li>
+                        <li><a href="#" class="icons-sm pin-ic"><i class="fa fa-pinterest"> </i></a></li>
+                        <li><a href="#" class="icons-sm gplus-ic"><i class="fa fa-google-plus"> </i></a></li>
+                        <li><a href="#" class="icons-sm tw-ic"><i class="fa fa-twitter"> </i></a></li>
+                        -->
+                        <li>
+                            <div class="suping-info">
+                                <p class="set-black fs-3">Information</p>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <!--/Social-->
+                <!--Search Form-->
+                <!--
+                <li>
+                    <form class="search-form" role="search">
+                        <div class="form-group md-form mt-0 pt-1 waves-light waves-light">
+                            <input type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </form>
+                </li>
+                -->
+                <!--/.Search Form-->
+                <!-- Side navigation links -->
+                <li>
+                    <ul class="collapsible collapsible-accordion">
+                        <li><a class="collapsible-header arrow-r"><i class="fa fa-tasks"></i>
+                                tasks<i class="fa fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="/suping/item/new" class="waves-effect"><i
+                                                class="fa fa-square"></i>add</a>
+                                    </li>
+                                    <li><a href="/suping/item/edit" class="waves-effect"><i
+                                                class="fa fa-square"></i>add</a>
+                                    </li>
+                                    <li><a href="/suping/item/delete" class="waves-effect"><i
+                                                class="fa fa-chevron-right"></i>Rakuten</a>
+                                    </li>
+                                    <li><a href="/suping/item/list" class="waves-effect"><i
+                                                class="fa fa-chevron-right"></i>...</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a class="collapsible-header arrow-r"><i class="fa fa-sliders"></i>
+                                settings<i class="fa fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul class="collapsible collapsible-accordion d2">
+                                    <li><a href="#" class="waves-effect" data-toggle="modal"
+                                            data-target="#basicExampleModal"><i class="fa fa-square"></i>...</a>
+                                    </li>
+                                    <li><a href="#" class="collapsible-header arrow-r"><i
+                                                class="fa fa-chevron-right"></i>表示
+                                            <i class="fa fa-angle-down rotate-icon-d2"></i></a>
+                                        <div class="collapsible-body">
+                                            <ul class="list-unstyled">
+                                                <li>
+                                                    <a class="set-black">aaa</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a class="collapsible-header arrow-r"><i class="fa fa-user"></i>
+                                nope<i class="fa fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="/rakuma/item/new" class="waves-effect"><i
+                                                class="fa fa-chevron-right"></i>今すぐ出品</a>
+                                    </li>
+                                    <li><a href="/rakuma/item/new#scheduled" class="waves-effect"><i
+                                                class="fa fa-chevron-right"></i>予約開始</a>
+                                    </li>
+                                    <li><a href="#" class="waves-effect"><i class="fa fa-chevron-right"></i>削除</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!--
+                        <li><a class="collapsible-header arrow-r"><i class="fa fa-hand-pointer-o"></i>
+                                Instruction<i class="fa fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="waves-effect">For bloggers</a>
+                                    </li>
+                                    <li><a href="#" class="waves-effect">For authors</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a class="collapsible-header arrow-r"><i class="fa fa-eye"></i> About<i class="fa fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="waves-effect">Introduction</a>
+                                    </li>
+                                    <li><a href="#" class="waves-effect">Monthly meetings</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a class="collapsible-header arrow-r"><i class="fa fa-envelope-o"></i> Contact
+                                me<i class="fa fa-angle-down rotate-icon"></i></a>
+                            <div class="collapsible-body">
+                                <ul class="list-unstyled">
+                                    <li><a href="#" class="waves-effect">FAQ</a>
+                                    </li>
+                                    <li><a href="#" class="waves-effect">Write a message</a>
+                                    </li>
+                                    <li><a href="#" class="waves-effect">FAQ</a>
+                                    </li>
+                                    <li><a href="#" class="waves-effect">Write a message</a>
+                                    </li>
+                                    <li><a href="#" class="waves-effect">FAQ</a>
+                                    </li>
+                                    <li><a href="#" class="waves-effect">Write a message</a>
+                                    </li>
+                                    <li><a href="#" class="waves-effect">FAQ</a>
+                                    </li>
+                                    <li><a href="#" class="waves-effect">Write a message</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        -->
+                    </ul>
+                </li>
+                <!--/. Side navigation links -->
+            </ul>
+            <div class="sidenav-bg mask-strong"></div>
+        </div>
+        <!--/. Sidebar navigation -->
+        <!-- Navbar -->
+        <nav class="navbar fixed-top navbar-toggleable-md navbar-expand-lg scrolling-navbar double-nav">
+            <!-- SideNav slide-out button -->
+            <div class="float-left">
+                <a href="#" data-activates="slide-out" class="button-collapse black-text"><i class="fa fa-bars"></i></a>
+            </div>
+            <!-- Breadcrumb-->
+            <div class="breadcrumb-dn mr-auto">
+                <p></p>
+            </div>
+            <!--
+            <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link waves-light"><i class="fa fa-envelope"></i> <span class="clearfix d-none d-sm-inline-block">Contact</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-light"><i class="fa fa-comments-o"></i> <span class="clearfix d-none d-sm-inline-block">Support</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-light"><i class="fa fa-user"></i> <span class="clearfix d-none d-sm-inline-block">Account</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle waves-light" href="#" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item waves-light" href="#">Action</a>
+                        <a class="dropdown-item waves-light" href="#">Another action</a>
+                        <a class="dropdown-item waves-light" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+            -->
+        </nav>
+        <!-- /.Navbar -->
+    </header>
+    <!--/Main Navigation-->
+    <main class="px-1" style="padding-top: 1rem">
+        <div class="iw" style="padding-bottom: .8rem">
+            <webview src="https://eusporangiate-overl.000webhostapp.com/auth/login.php" id="wv" width="100%"
+                height="100%" preload="src/assets/js/pr0.js">
+            </webview>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small blue fixed-bottom pl-0" style="display: none">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> lazyboot.ninja</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <!-- SCRIPTS -->
+    <!-- Insert this line above script imports  -->
+    <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="src/assets/lib/mdb-4.5.16/js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="src/assets/lib/mdb-4.5.16/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="src/assets/lib/mdb-4.5.16/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="src/assets/lib/mdb-4.5.16/js/mdb.min.js"></script>
+    <script>
+        $(document).ready(() => {
+            const { ipcRenderer } = require('electron');
+            $('#TitleBarClose').on('click', () => { ipcRenderer.send('window-close') });
+            $('#TitleBarMaximize').on('click', () => { ipcRenderer.send('window-maximize') });
+            $('#TitleBarMinimize').on('click', () => { ipcRenderer.send('window-minimize') });
+        });
+    </script>
+    <!-- Insert this line after script imports -->
+    <script>if (window.module) module = window.module;</script>
+</body>
+
+</html>

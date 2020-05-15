@@ -1,0 +1,1735 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>lazyboot</title>
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="src/assets/lib/mdb-4.5.16/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="src/assets/lib/mdb-4.5.16/css/mdb.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link hrefx="https://fonts.googleapis.com/css?family=Noto+Sans+JP" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="src/assets/css/style.css" rel="stylesheet">
+    <link href="src/assets/css/frame.css" rel="stylesheet">
+    <link href="src/assets/lib/swiper-4.5.0/dist/css/swiper.min.css" rel="stylesheet">
+    <link href="src/assets/lib/Bootstrap-4-Date-Time-Picker/src/docs/theme/css/tempusdominus-bootstrap-4.css"
+        rel="stylesheet">
+</head>
+
+<body class="fixed-sn dark-bg" aria-busy="true">
+    <!-- Frame -->
+    <div class="bg-dark" style="height: 4px;"></div>
+    <div
+        class="typeWindows-1za-n7 titleBar-AC4pGV horizontalReverse-3tRjY7 flex-1O1GKY directionRowReverse-m8IjIq justifyStart-2NDFzi alignStretch-DpGPf3 mt-0 bg-dark">
+        <div id="TitleBarClose"
+            class="winButtonClose-1HsbF- winButton-iRh8-Z flexCenter-3_1bcw flex-1O1GKY justifyCenter-3D2jYp alignCenter-1dQNNs">
+            <svg name="TitleBarClose" width="12" height="12" viewBox="0 0 12 12">
+                <polygon fill="#ffffff" fill-rule="evenodd"
+                    points="11 1.576 6.583 6 11 10.424 10.424 11 6 6.583 1.576 11 1 10.424 5.417 6 1 1.576 1.576 1 6 5.417 10.424 1">
+                </polygon>
+            </svg></div>
+        <div id="TitleBarMaximize"
+            class="winButtonMinMax-PBQ2gm winButton-iRh8-Z flexCenter-3_1bcw flex-1O1GKY justifyCenter-3D2jYp alignCenter-1dQNNs">
+            <svg name="TitleBarMaximize" width="12" height="12" viewBox="0 0 12 12">
+                <rect width="9" height="9" x="1.5" y="1.5" fill="none" stroke="#ffffff"></rect>
+            </svg></div>
+        <div id="TitleBarMinimize"
+            class="winButtonMinMax-PBQ2gm winButton-iRh8-Z flexCenter-3_1bcw flex-1O1GKY justifyCenter-3D2jYp alignCenter-1dQNNs">
+            <svg name="TitleBarMinimize" width="12" height="12" viewBox="0 0 12 12">
+                <rect fill="#ffffff" width="10" height="1" x="1" y="6"></rect>
+            </svg>
+        </div>
+        <div class="mr-auto">
+            <img id="logo" src="src/assets/images/logo.svg" class="img-fluid" width="70px"
+                style="position: relative; top: -6px; margin-left: 8px;">
+        </div>
+    </div>
+    <!-- Frame -->
+    <!-- Start your project here-->
+    <div style="display: none; height: 100vh">
+        <div class="flex-center flex-column">
+            <h1 class="animated fadeIn mb-2">Suping</h1>
+
+            <h5 class="animated fadeIn mb-1">感謝します。</h5>
+
+            <p class="animated fadeIn text-muted">Suping Team</p>
+        </div>
+    </div>
+    <!-- Swipe -->
+    <!-- new Date().toLocaleString() -->
+    <div id="swipe">
+        <div class="bgImage">
+            <p class="log-adjust mb-1"></p>
+            <div class="swiper-container">
+                <div class="log-view swiper-wrapper swiper-no-swiping">
+                    <!--
+                    <div class="logo-box mx-auto">
+                        <div class="log-head mb-4">
+                            <span>
+                                <img class="log-brand-image" src="src/assets/images/brands/supreme-100x100.png"
+                                    width="26px">
+                                <a class="log-brand-name">Supreme</a>
+                                <a class="log-date">2019/03/11 07:57:12</a>
+                            </span>
+                        </div>
+                        <div class="log-body">
+                            <span>
+                                購入しました。メールを確認してください。
+                            </span>
+                        </div>
+                    </div>
+                    -->
+
+                    <div class="logo-b2ox mx-auto" style="max-height: 500px" id="iko">
+
+                    </div>
+                </div>
+            </div>
+            <img class="arrow" src="src/assets/images/bottom-arrow.svg" width="38px">
+        </div>
+    </div>
+
+    <!-- SideNav slide-out button -->
+    <a href="#" data-activates="slide-out" class="btn ml-3 mt-2 px-3 py-2 button-collapse" style="display: none"><i
+            class="fa fa-bars"></i></a>
+
+    <!-- Sidebar navigation -->
+    <div id="slide-out" class="side-nav fixed wide sn-bg-1 patch" style="transform: translateX(0px);">
+        <ul class="custom-scrollbar">
+            <!-- Logo -->
+            <li>
+                <div class="logo-wrapper sn-ad-avatar-wrapper" style="position: relative; top: 30px;">
+                    <a href="#"><img src="https://pbs.twimg.com/profile_images/747773184863313920/SRFuZqcW_400x400.jpg"
+                            class="rounded-circle">
+                    </a></div>
+            </li>
+            <li>
+                <ul class="collapsible collapsible-accordion">
+                    <li class="active"><a href="#"></a><a class="collapsible-header waves-effect arrow-r active"><i
+                                class="sv-slim-icon fa fa-chevron-right"></i>
+                            Submit blog<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body" style="display: block;">
+                            <ul>
+                                <li><a href="#" class="waves-effect active">
+                                        <span class="sv-slim"> SL </span>
+                                        <span class="sv-normal">Submit listing</span></a>
+                                </li>
+                                <li><a href="#" class="waves-effect">
+                                        <span class="sv-slim"> RF </span>
+                                        <span class="sv-normal">Registration form</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i
+                                class="sv-slim-icon far fa-hand-point-right"></i>
+                            Instruction<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#" class="waves-effect">
+                                        <span class="sv-slim"> FB </span>
+                                        <span class="sv-normal">For bloggers</span></a>
+                                </li>
+                                <li><a href="#" class="waves-effect">
+                                        <span class="sv-slim"> FA </span>
+                                        <span class="sv-normal">For authors</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i class="sv-slim-icon fa fa-eye"></i>
+                            About<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li><a href="#" class="waves-effect">
+                                        <span class="sv-slim"> I </span>
+                                        <span class="sv-normal">Introduction</span></a>
+                                </li>
+                                <li><a href="#" class="waves-effect">
+                                        <span class="sv-slim"> MM </span>
+                                        <span class="sv-normal">Monthly meetings</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a class="collapsible-header waves-effect arrow-r"><i class="sv-slim-icon far fa-envelope"></i>
+                            Contact me<i class="fa fa-angle-down rotate-icon"></i></a>
+                        <div class="collapsible-body">
+                            <ul>
+                                <li>
+                                    <a href="#" class="waves-effect">
+                                        <span class="sv-slim"> F </span>
+                                        <span class="sv-normal">FAQ</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="waves-effect">
+                                        <span class="sv-slim"> W </span>
+                                        <span class="sv-normal">Write a message</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><a id="toggle" class="waves-effect"><i class="sv-slim-icon fa fa-angle-double-left"></i>Minimize
+                            menu</a>
+                    </li>
+                </ul>
+            </li>
+            <!--/. Side navigation links -->
+        </ul>
+        <div class="sidenav-bg rgba-blue-strong"></div>
+    </div>
+    <webviewa id="wv001" src="about:blank" style="height: 500px;">
+    </webviewa>
+
+    <!--/. Sidebar navigation -->
+    <!--
+    <webview src3="https://www.google.com/recaptcha/api2/demo" id="wv" style="height: 700px; display: none;"
+        preload="src/assets/js/preload.js">
+    </webview>
+    -->
+
+    <!-- /Start your project here-->
+    <!--Main Navigation-->
+    <!--/Main Navigation-->
+    <main class="px-1" style="padding-top: .8rem">
+        <div class="text-center"><img src="src/assets/images/logo.svg" class="img-fluid" width="200px"
+                style="display: none;"></div>
+        <!-- PreLoader -->
+        <div id="mdb-preloader" class="flex-center">
+            <div class="preloader-wrapper big active crazy">
+                <div class="spinner-layer spinner-blue-only">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PreLoader -->
+        <div class="container-fluid mx-0" style="padding-top: 1.5rem; display: none;">
+            <!--
+            <div class="text-center3 ml-1 mb-2">
+                <img src="src/assets/images/nike-dd.png" class="img-fluid" style="max-width: 140px">
+            </div>
+            -->
+            <!--
+            <div class="light-font">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb primary-color">
+                        <li class="breadcrumb-item"><a class="white-text" href="/suping/home">Home</a></li>
+                        <li class="breadcrumb-item" style="display: none;"><a class="white-text" href="#"></a></li>
+                        <li class="breadcrumb-item" style="display: none; color: #dee2e6 !important;"></li>
+                    </ol>
+                </nav>
+            </div>
+            -->
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs md-tabs nav-justified red lighten-1" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" data-toggle="tab" href="#panel000" role="tab" draggable="false">
+                        <i class="fa fa-tasks pr-2"></i>Tasks</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#panel002" role="tab" draggable="false">
+                        <i class="fa fa-laptop pr-2"></i>Proxies</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#panel003" role="tab" draggable="false">
+                        <i class="fa fa-address-card pr-2"></i>Billing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" data-toggle="tab" href="#panel004" role="tab" draggable="false">
+                        <i class="fa fa-sliders pr-2"></i>Settings</a>
+                </li>
+            </ul>
+            <!-- Nav tabs -->
+
+            <!-- Tab panels -->
+            <div class="tab-content">
+                <!-- Panel 1 -->
+                <div class="tab-pane fade in show active" id="panel000" role="tabpanel">
+                    <div class="card card-cascade wider reverse mb-2 text-white">
+                        <div classx="view view-cascade overlay wow fadeIn"
+                            style="visibility: visible; animation-name: fadeIn;">
+                            <div class="ml-3 mt-3">
+                                <div class="row">
+                                    <div class="col-12 mx-auto"
+                                        style="padding-left: 14px !important; padding-right: 30px !important;">
+                                        <div class="card text-dark mb-4" style="margin-left: 0rem !important">
+                                            <div class="card-body">
+                                                <div class="task-table01-w">
+                                                    <table id="task-table" class="table table-hover table-bordered2"
+                                                        style="user-select: none;">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">ID</th>
+                                                                <th scope="col">Website</th>
+                                                                <th scope="col">Product</th>
+                                                                <th scope="col">Size</th>
+                                                                <th scope="col">Style</th>
+                                                                <th scope="col">Start Time</th>
+                                                                <th scope="col">Proxy</th>
+                                                                <th scope="col">Status</th>
+                                                                <th scope="col" style="width: 158px;">Actions</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr style="display: none">
+                                                                <th scope="row">1</th>
+                                                                <td style="max-width: 80px;">.....</td>
+                                                                <td style="max-width: 170px;">.....</td>
+                                                                <td style="max-width: 100px;">.....</td>
+                                                                <td style="max-width: 100px;">.....</td>
+                                                                <td>manual</td>
+                                                                <td>none</td>
+                                                                <td>unstable</td>
+                                                                <td>
+                                                                    <span class="table-actions">
+                                                                        <button type="button" id="repbtn01"
+                                                                            class="btn btn-success btn-rounded btn-sm0 m-0 waves-effect waves-light"><i
+                                                                                class="fa fa-play-circle"></i></button>
+                                                                        <button type="button"
+                                                                            class="btn btn-white btn-rounded btn-sm0 m-0 waves-effect waves-light"><i
+                                                                                class="fa fa-edit"></i></button>
+                                                                        <button type="button"
+                                                                            class="btn btn-danger btn-rounded btn-sm0 m-0 waves-effect waves-light"><i
+                                                                                class="fa fa-trash-o fa-c001"></i></button>
+
+                                                                        <!-- not used -->
+                                                                        <button style="display: none" type="button"
+                                                                            id="repbtn02"
+                                                                            class="btn btn-danger btn-rounded btn-sm0 m-0 waves-effect waves-light"><i
+                                                                                class="fa fa-pause-circle"></i></button>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <span class="mr-2"></span>
+                                                <div class="text-center">
+                                                    <button type="button" class="btn btn-primary float-left mt-3 mr-2"
+                                                        data-toggle="modal" data-target="#basicExampleModal"
+                                                        style="border-radius: 24px 24px 24px 24px; padding: .70rem 2.10rem;">
+                                                        Add
+                                                    </button>
+                                                    <span class="ml-4"></span>
+                                                    <span class="ml-4"></span>
+                                                    <span class="ml-4"></span>
+                                                    <span class="ml-4"></span>
+                                                    <span class="ml-4"></span>
+                                                    <button type="button" id="startTasks"
+                                                        class="btn btn-success ml-auto mt-3 mr-2" data-toggle="modalx"
+                                                        data-target="#basicExampleModalx"
+                                                        style="border-radius: 24px 24px 24px 24px; padding: .70rem 2.10rem;">
+                                                        Start All
+                                                    </button>
+                                                    <button type="button" id="stopTasks"
+                                                        class="btn btn-danger ml-auto mt-3 mr-2" data-toggle="modalx"
+                                                        data-target="#basicExampleModalx"
+                                                        style="border-radius: 24px 24px 24px 24px; padding: .70rem 2.10rem;">
+                                                        Stop All
+                                                    </button>
+                                                    <span class="ml-4"></span>
+                                                    <span class="ml-4"></span>
+                                                    <span class="ml-4"></span>
+                                                    <span class="ml-4"></span>
+                                                    <button type="button" id="deleteTasks"
+                                                        class="btn btn-danger float-right mt-3 mr-2"
+                                                        data-toggle="modalx" data-target="#basicExampleModalx"
+                                                        style="border-radius: 24px 24px 24px 24px; padding: .70rem 2.10rem;">
+                                                        Delete All
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Panel 1 -->
+
+                <!-- Panel 2 -->
+                <div class="tab-pane fade" id="panel002" role="tabpanel">
+                    <div class="card card-cascade wider reverse mb-2">
+                        <div classx="view view-cascade overlay wow fadeIn"
+                            style="visibility: visible; animation-name: fadeIn;">
+                            <div class="ml-3 mt-3">
+                                <div class="row">
+                                    <div class="col-12 mx-auto"
+                                        style="padding-left: 14px !important; padding-right: 30px !important;">
+                                        <div class="card text-dark mb-4" style="margin-left: 0rem !important">
+                                            <div class="card-body pb-0">
+                                                <div class="proxy-table01-w">
+                                                    <table id="proxy-table" class="table table-hover table-bordered2"
+                                                        style="user-select: none;">
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">ID</th>
+                                                                <th scope="col">Website</th>
+                                                                <th scope="col">Server</th>
+                                                                <th scope="col">Port</th>
+                                                                <th scope="col">Username</th>
+                                                                <th scope="col">Password</th>
+                                                                <th scope="col">Response Time</th>
+                                                                <th scope="col" style="width: 158px;">Actions</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr style="display: none">
+                                                                <th scope="row">1</th>
+                                                                <td style="max-width: 80px;">.....</td>
+                                                                <td style="max-width: 170px;">.....</td>
+                                                                <td style="max-width: 170px;">.....</td>
+                                                                <td style="max-width: 170px;">.....</td>
+                                                                <td style="max-width: 170px;">.....</td>
+                                                                <td style="max-width: 170px;">.....</td>
+                                                                <td>
+                                                                    <span class="table-actions">
+                                                                        <button type="button" id="repbtn01"
+                                                                            class="btn btn-success btn-rounded btn-sm0 m-0 waves-effect waves-light"><i
+                                                                                class="fa fa-stopwatch"></i></button>
+                                                                        <button type="button"
+                                                                            class="btn btn-danger btn-rounded btn-sm0 m-0 waves-effect waves-light"><i
+                                                                                class="fa fa-trash-o fa-c001"></i></button>
+                                                                        <!-- not used -->
+                                                                        <button style="display: none" type="button"
+                                                                            id="repbtn02"
+                                                                            class="btn btn-danger btn-rounded btn-sm0 m-0 waves-effect waves-light"><i
+                                                                                class="fa fa-pause-circle"></i></button>
+                                                                    </span>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="mt-4">
+                                                    <div class="float-left">
+                                                        <button type="button" id="proxy-create-new"
+                                                            class="btn btn-primary waves-effect waves-light"
+                                                            style="padding: .58rem 1.4rem;font-size: 13px;">Create</button>
+                                                    </div>
+                                                    <div class="float-right">
+                                                        <button type="button" id="proxy-delete-all"
+                                                            class="btn btn-red waves-effect waves-light"
+                                                            style="padding: .58rem 1.4rem;font-size: 13px;">Delete
+                                                            All</button>
+                                                        <button type="button" id="proxy-import"
+                                                            class="btn btn-outline-default btn-rounded waves-effect green"
+                                                            style="padding: 7px 18px; margin-left: 20px;"
+                                                            disabled>Import</button>
+                                                        <button type="button" id="proxy-export"
+                                                            class="btn btn-outline-default btn-rounded waves-effect green ml-0"
+                                                            style="padding: 7px 18px;" disabled>Export</button>
+                                                    </div>
+                                                    <div class="float-left">
+                                                        <select
+                                                            class="mdb-select md-form colorful-select dropdown-primary mt-0 retailer selector2 pattern1 mb-0"
+                                                            style="position: relative; left: 40%;">
+                                                            <option value="1">Supreme</option>
+                                                            <option value="2">SNKRS</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <!--
+                                                <h5 class="mb-0">Proxies</h5>
+                                                <div class="dropdown-divider mt-2 mb-3"
+                                                    style="margin: 0; border-top: 2px solid #e3e5e7;"></div>
+                                                <div class="mb-4">
+                                                    <span>IP:Port:User:Password</span>
+                                                    <div>
+                                                        <input type="text" id="proxy-data" class="form-control"
+                                                            style="font-size: 13px;">
+                                                    </div>
+                                                    <div id="proxy-checker" class="text-center mt-2">
+                                                        <button type="button"
+                                                            class="btn btn-danger btn-rounded btn-sm0 my-0 mx-0">Check</button>
+                                                        <p class="mt-1" style="color: #0dd80d; font-size: 14px;">
+                                                            　　
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <span>Profile Name</span>
+                                                <input type="text" id="proxy-profile" class="form-control mt-0 mb-1"
+                                                    style="max-width: 180px;">
+                                                <span class="mr-2"></span>
+                                                <button type="button" id="proxy-save-btn"
+                                                    class="btn btn-primary mt-1 ml-auto">
+                                                    Save
+                                                </button>
+                                                -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Panel 2 -->
+
+                <!-- Panel 3 -->
+                <div class="tab-pane fade" id="panel003" role="tabpanel">
+                    <div class="card card-cascade wider reverse mb-2">
+                        <div classx="view view-cascade overlay wow fadeIn"
+                            style="visibility: visible; animation-name: fadeIn;">
+                            <div class="ml-3 mr-3 mt-3">
+                                <div class="row">
+                                    <div class="col-6 ml-auto" style="min-width: 460px;max-width: 460px;">
+                                        <div class="card text-dark mb-4">
+                                            <div class="card-body" style="height: 520px">
+                                                <h5 class="mb-0">Payment Details</h5>
+                                                <div class="dropdown-divider mt-2 mb-3"
+                                                    style="margin: 0; border-top: 2px solid #e3e5e7;">
+                                                </div>
+                                                <div class="bwrap pt-2">
+                                                    <div>
+                                                        <div class="mt-1 mb-2" style="max-width: 337px;">
+                                                            <input type="text" id="payment-email"
+                                                                class="form-control success dark" placeholder="Email">
+                                                        </div>
+                                                    </div>
+                                                    <div style="display: flex;">
+                                                        <div class="mt-1 mb-2" style="max-width: 160px;">
+                                                            <input type="text" id="payment-phone"
+                                                                class="form-control success dark" placeholder="Phone">
+                                                        </div>
+                                                        <div class="mt-1 ml-2 mb-2" style="max-width: 170px;">
+                                                            <input type="text" id="payment-holdername"
+                                                                class="form-control success dark"
+                                                                placeholder="Holder's Name">
+                                                        </div>
+                                                    </div>
+
+                                                    <div id="payment-cc_type" style="display: none">
+                                                        <div class=""
+                                                            style="position: relative; left: 1%; max-width: 120px">
+                                                            <select class="mdb-select md-form mt-0">
+                                                                <option value="1">VISA</option>
+                                                                <option value="2">Mastercard</option>
+                                                                <option value="3">JCB</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="mt-4 mb-2" style="max-width: 200px;">
+                                                            <input type="text" id="payment-cc_number"
+                                                                class="form-control success dark"
+                                                                placeholder="Card Number" pattern="[0-9]*"
+                                                                oninput="if(value.length>19)value=value.slice(0,19)">
+                                                        </div>
+                                                    </div>
+                                                    <div style="display: flex; margin-bottom: 10px;">
+                                                        <div>
+                                                            <div class="mt-1 mb-2"
+                                                                style="max-width: 350px; display: flex;">
+                                                                <input type="text" id="payment-cc_cvv"
+                                                                    class="form-control success dark mr-2 text-center"
+                                                                    placeholder="CVV" maxlength="4"
+                                                                    style="max-width: 60px;">
+                                                            </div>
+                                                        </div>
+                                                        <div class="ml-4">
+                                                            <div class="mt-1 mb-4"
+                                                                style="max-width: 350px; display: flex;">
+                                                                <input type="text" id="payment-cc_mo"
+                                                                    class="form-control success dark mr-2 text-center"
+                                                                    placeholder="MO" maxlength="2"
+                                                                    style="max-width: 50px;">
+                                                                <input type="text" id="payment-cc_yr"
+                                                                    class="form-control success dark text-center"
+                                                                    placeholder="YR" maxlength="2"
+                                                                    style="max-width: 50px;">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pt-4"></div>
+                                                    <div style="display: flex; margin-top: 40px">
+                                                        <div style="position: relative; top: 80px; max-width: 136px">
+                                                            <select
+                                                                class="mdb-select md-form colorful-select dropdown-primary mt-0 billing selector pattern1">
+                                                                <option value="0" disabled>select a profile</option>
+                                                            </select>
+                                                        </div>
+                                                        <div style="position: relative; top: 28px; left: 8%;">
+                                                            <div>
+                                                                <button type="button" id="billing-delete"
+                                                                    class="btn btn-red waves-effect waves-light"
+                                                                    data-togglex="modal" data-targetx="#centralModalSm2"
+                                                                    style="padding: .50rem .7rem;font-size: 12px;">Delete</button>
+                                                                <button type="button" id="billing-save"
+                                                                    class="btn btn-green waves-effect waves-light"
+                                                                    data-togglex="modal" data-targetx="#centralModalSm2"
+                                                                    style="padding: .50rem 1.3rem;font-size: 12px;">Save</button>
+                                                                <button type="button" id="billing-create-new"
+                                                                    class="btn btn-primary waves-effect waves-light"
+                                                                    data-togglex="modal" data-targetx="#centralModalSm2"
+                                                                    style="padding: .50rem .7rem;font-size: 12px;">Create</button>
+                                                                <div class="mt-1 ml-1">
+                                                                    <button type="button" id="billing-import"
+                                                                        class="btn btn-outline-default btn-rounded waves-effect green"
+                                                                        style="padding: 7px 18px; margin-left: 20px;"
+                                                                        disabled>Import</button>
+                                                                    <button type="button" id="billing-export"
+                                                                        class="btn btn-outline-default btn-rounded waves-effect green ml-0"
+                                                                        style="padding: 7px 18px;"
+                                                                        disabled>Export</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div style="margin-left: 40px; display: none">
+                                                            <input type="text" id="billing-profile2"
+                                                                class="form-control success mb-1"
+                                                                style="max-width: 180px; height: 34px"
+                                                                placeholder="Profile Name">
+                                                            <span class="mr-1"></span>
+                                                            <button type="button" id="billing-save-btn2"
+                                                                class="btn btn-primary mt-2 mb-1 waves-effect waves-light"
+                                                                style="padding: .64rem 2.04rem; margin-left: 40px">
+                                                                Create
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="float-left">
+
+                                                    </div>
+                                                    <!--
+                                                    <span>Profile Name</span>
+                                                    <input type="text" id="billing-profile"
+                                                        class="form-control mt-1 mb-1" style="max-width: 180px;">
+                                                    <span class="mr-1"></span>
+                                                    <button type="button" id="billing-save-btn"
+                                                        class="btn btn-primary mt-2 mb-1 ml-auto"
+                                                        style="padding: .74rem 2.14rem;">
+                                                        Save
+                                                    </button>
+                                                    -->
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 mr-auto pr-2"
+                                        style="padding-left: .6rem !important; min-width: 470px; max-width: 470px">
+                                        <div class="card text-dark mb-4" style="margin-left: 0rem !important">
+                                            <div class="card-body"
+                                                style="margin-left: 0rem !important; overflow-y:scroll; max-height: 520px;">
+                                                <h5 class="mb-0">Shipping Details</h5>
+                                                <div id="shipping-details">
+                                                    <div class="dropdown-divider mt-2 mb-4"
+                                                        style="margin: 0; border-top: 2px solid #e3e5e7;"></div>
+                                                    <div style="display: flex; align-items: baseline;">
+                                                        <div class="mt-1 mb-3" style="max-width: 340px;">
+                                                            <input type="text" class="form-control success dark"
+                                                                placeholder="First Name">
+                                                        </div>
+                                                        <div class="mb-3 ml-2" style="max-width: 340px;">
+                                                            <input type="text" class="form-control success dark"
+                                                                placeholder="Last Name">
+                                                        </div>
+                                                        <div class="mr-2"></div>
+                                                    </div>
+                                                    <div
+                                                        style="display: flexx; align-items: baseline; position: relative; top: -4px;">
+                                                        <div class="mb-3" style="max-width: 340px;">
+                                                            <input type="text" class="form-control success dark"
+                                                                placeholder="Email">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        style="display: flex; align-items: baseline; position: relative; top: -4px;">
+                                                        <div class="mb-4" style="max-width: 340px;">
+                                                            <input type="text" class="form-control success dark"
+                                                                placeholder="Phone">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ml-2" style="display: flex; align-items: baseline;">
+                                                        <div style="max-width: 130px; position: relative; top: -4px;">
+                                                            <select class="mdb-select md-form mt-0">
+                                                                <option value="" disabled></option>
+                                                                <option value="1">Japan</option>
+                                                                <option value="2">USA</option>
+                                                                <option value="3">Belgium</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        style="display: flex; align-items: baseline; position: relative; top: -4px;">
+                                                        <div class="mb-3" style="mmax-width: 340px;">
+                                                            <input type="text" class="form-control success dark"
+                                                                placeholder="Zip Code">
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        style="display: flex; align-items: baseline; position: relative; top: -4px;">
+                                                        <div class="mb-3" style="max-width: 340px;">
+                                                            <input type="text" class="form-control success dark"
+                                                                placeholder="State">
+                                                        </div>
+                                                        <div class="mb-3 ml-2" style="max-width: 340px;">
+                                                            <input type="text" class="form-control success dark"
+                                                                placeholder="City">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        style="display: flexx; align-items: baseline; position: relative; top: -4px;">
+                                                        <div class="mb-3" style="max-width: 340px;">
+                                                            <input type="text" class="form-control success dark"
+                                                                placeholder="Address 1">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        style="display: flexx; align-items: baseline; position: relative; top: -4px;">
+                                                        <div class="mb-3" style="max-width: 340px;">
+                                                            <input type="text" class="form-control success dark"
+                                                                placeholder="Address 2">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mt-2"></div>
+                                                <div id="imitate-switch" class="switch" style="display: flex;">
+                                                    <h5 class="mb-0">Billing Details</h5>
+                                                    <label class="ml-auto mb-0">
+                                                        <input type="checkbox">
+                                                        <span class="lever"></span>
+                                                    </label>
+                                                </div>
+                                                <div id="billing-details">
+                                                    <div class="dropdown-divider mt-2 mb-4"
+                                                        style="margin: 0; border-top: 2px solid #e3e5e7;"></div>
+                                                    <div style="display: flex; align-items: baseline;">
+                                                        <div class="mt-1 mb-3" style="max-width: 340px;">
+                                                            <input type="text" class="form-control success dark"
+                                                                placeholder="First Name">
+                                                        </div>
+                                                        <div class="mb-3 ml-2" style="max-width: 340px;">
+                                                            <input type="text" class="form-control success dark"
+                                                                placeholder="Last Name">
+                                                        </div>
+                                                        <div class="mr-2"></div>
+                                                    </div>
+                                                    <div
+                                                        style="display: flexx; align-items: baseline; position: relative; top: -4px;">
+                                                        <div class="mb-3" style="max-width: 340px;">
+                                                            <input type="text" class="form-control success dark"
+                                                                placeholder="Email">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        style="display: flex; align-items: baseline; position: relative; top: -4px;">
+                                                        <div class="mb-4" style="max-width: 340px;">
+                                                            <input type="text" class="form-control success dark"
+                                                                placeholder="Phone">
+                                                        </div>
+                                                    </div>
+                                                    <div class="ml-2" style="display: flex; align-items: baseline;">
+                                                        <div style="max-width: 130px; position: relative; top: -4px;">
+                                                            <select class="mdb-select md-form mt-0">
+                                                                <option value="" disabled></option>
+                                                                <option value="1">Japan</option>
+                                                                <option value="2">USA</option>
+                                                                <option value="3">Belgium</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        style="display: flex; align-items: baseline; position: relative; top: -4px;">
+                                                        <div class="mb-3" style="mmax-width: 340px;">
+                                                            <input type="text" class="form-control success dark"
+                                                                placeholder="Zip Code">
+                                                        </div>
+                                                    </div>
+
+                                                    <div
+                                                        style="display: flex; align-items: baseline; position: relative; top: -4px;">
+                                                        <div class="mb-3" style="max-width: 340px;">
+                                                            <input type="text" class="form-control success dark"
+                                                                placeholder="State">
+                                                        </div>
+                                                        <div class="mb-3 ml-2" style="max-width: 340px;">
+                                                            <input type="text" class="form-control success dark"
+                                                                placeholder="City">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        style="display: flexx; align-items: baseline; position: relative; top: -4px;">
+                                                        <div class="mb-3" style="max-width: 340px;">
+                                                            <input type="text" class="form-control success dark"
+                                                                placeholder="Address 1">
+                                                        </div>
+                                                    </div>
+                                                    <div
+                                                        style="display: flexx; align-items: baseline; position: relative; top: -4px;">
+                                                        <div class="mb-3" style="max-width: 340px;">
+                                                            <input type="text" class="form-control success dark"
+                                                                placeholder="Address 2">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mb-2"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Panel 3 -->
+
+                <!-- Panel 3 -->
+                <div class="tab-pane fade" id="panel004" role="tabpanel">
+                    <div class="card card-cascade wider reverse mb-2">
+                        <div classx="view view-cascade overlay wow fadeIn"
+                            style="visibility: visible; animation-name: fadeIn;">
+                            <div class="ml-3 mt-3">
+                                <div class="row">
+                                    <div class="col-4 ml-auto"
+                                        style="padding-right: 0rem; margin-right: 0rem !important; margin-top: .1rem !important; max-width: 160px;">
+                                        <div class="col-12 list-group" id="settings-list-tab1" role="tablist"
+                                            style="padding-right: 0rem !important; margin-right: 0rem !important; margin-leftx: 50px !important;">
+                                            <a class="list-group-item list-group-item-action active"
+                                                id="list-accounts-list" data-toggle="list" href="#list-accounts"
+                                                role="tab" aria-controls="accounts">Accounts</a>
+                                            <a class="list-group-item list-group-item-action" id="list-captcha-list"
+                                                data-toggle="list" href="#list-captcha" role="tab"
+                                                aria-controls="captcha">Captcha</a>
+                                            <a class="list-group-item list-group-item-action" id="list-log-list"
+                                                data-toggle="list" href="#list-log" role="tab"
+                                                aria-controls="log">Log</a>
+                                            <a class="list-group-item list-group-item-action" id="list-settings-list"
+                                                data-toggle="list" href="#list-settings" role="tab"
+                                                aria-controls="settings">Settings</a>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 mr-auto" style="padding-left: 0rem !important; max-width: 542px;">
+                                        <div class="tab-content" id="settings-nav-tabContent1"
+                                            style="padding-left: 1rem !important">
+                                            <div class="tab-pane fade show active" id="list-accounts" role="tabpanel"
+                                                aria-labelledby="list-accounts-list">
+                                                <div id="settings-card01" class="col-12"
+                                                    style="padding-left: 0rem !important">
+                                                    <div class="card text-dark mb-2">
+                                                        <div class="card-body">
+                                                            <h5 class="mb-0">Accounts</h5>
+                                                            <div class="dropdown-divider mt-2 mb-4"
+                                                                style="margin: 0; border-top: 2px solid #e3e5e7;">
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <h6 class="text-white">
+
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div id="settings-ac-select" class="col-6 mx-auto mb-4"
+                                                                    style="max-width: 200px;">
+                                                                    <select class="mdb-select md-form"
+                                                                        searchable="Search here..">
+                                                                        <optgroup label="general">
+                                                                            <option value="1">Supreme</option>
+                                                                            <option value="2">SNKRS</option>
+                                                                            <option value="3">Atmos</option>
+                                                                            <option value="4">Adidas</option>
+                                                                        </optgroup>
+                                                                        <optgroup label="楽天">
+                                                                            <option value="200">yamaotoko</option>
+                                                                            <option value="201">mitan</option>
+                                                                            <option value="202">project1-6</option>
+                                                                            <option value="203">rakutenTest</option>
+                                                                        </optgroup>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-10 mx-auto" style="max-width: 342px;">
+                                                                    <div class="text-center">
+                                                                        <!-- Email -->
+                                                                        <input type="email" id="defaultLoginFormEmail"
+                                                                            class="form-control success dark mb-4"
+                                                                            placeholder="Email">
+
+                                                                        <!-- Password -->
+                                                                        <input type="password"
+                                                                            id="defaultLoginFormPassword"
+                                                                            class="form-control success dark mb-4"
+                                                                            placeholder="Password">
+
+                                                                        <button type="button" id="settings-ac-add"
+                                                                            class="btn btn-success btn-rounded btn-md my-0">Add</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="mb-4"></div>
+                                                            <!--Accordion wrapper-->
+                                                            <div class="accordion md-accordion" id="accordionEx"
+                                                                role="tablist" aria-multiselectable="true">
+
+                                                                <!-- Accordion card -->
+                                                                <div class="card dark-edition">
+
+                                                                    <!-- Card header -->
+                                                                    <div class="card-header" role="tab" id="heading01">
+                                                                        <a data-toggle="collapse"
+                                                                            data-parent="#accordionEx"
+                                                                            href="#collapse01" aria-expanded="true"
+                                                                            aria-controls="collapse01">
+                                                                            <h6 class="mb-0">
+                                                                                Show Accounts
+                                                                            </h6>
+                                                                        </a>
+                                                                    </div>
+
+                                                                    <!-- Card body -->
+                                                                    <div id="collapse01" class="collapse"
+                                                                        role="tabpanel" aria-labelledby="heading01"
+                                                                        data-parent="#accordionEx">
+                                                                        <div class="card-body p-0">
+                                                                            <div class="row">
+                                                                                <div class="col-12">
+                                                                                    <div class="settings-ac-table01">
+                                                                                        <table
+                                                                                            class="table table-hover table-bordered text-white"
+                                                                                            style="user-select: none;">
+                                                                                            <thead>
+                                                                                                <tr>
+                                                                                                    <th scope="col">
+                                                                                                        ID
+                                                                                                    </th>
+                                                                                                    <th scope="col">
+                                                                                                        Email</th>
+                                                                                                    <th scope="col"
+                                                                                                        style="width: 128px;">
+                                                                                                        Actions</th>
+                                                                                                </tr>
+                                                                                            </thead>
+                                                                                            <tbody>
+                                                                                                <tr
+                                                                                                    style="display: none">
+                                                                                                    <th scope="row">
+                                                                                                        1
+                                                                                                    </th>
+                                                                                                    <th>a483h93fh9fffffffffffffffffffffffffff43@yahoo.co.jp
+                                                                                                    </th>
+                                                                                                    <td>
+                                                                                                        <span
+                                                                                                            class="table-actions">
+                                                                                                            <button
+                                                                                                                type="button"
+                                                                                                                class="btn btn-dark btn-rounded btn-sm0 my-0 mx-0">Edit</button>
+                                                                                                            <button
+                                                                                                                type="button"
+                                                                                                                class="btn btn-danger btn-rounded btn-sm0 my-0 mx-0"><i
+                                                                                                                    class="fa fa-trash-o fa-c001"></i></button>
+                                                                                                        </span>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <!-- Accordion card -->
+
+                                                            </div>
+                                                            <!-- Accordion wrapper -->
+
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <h6 class="text-white">
+
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="list-captcha" role="tabpanel"
+                                                aria-labelledby="list-captcha-list">
+                                                <div id="settings-card01" class="col-12"
+                                                    style="padding-left: 0rem !important">
+                                                    <div class="card text-dark mb-2">
+                                                        <div class="card-body">
+                                                            <h5 class="mb-0">Captcha</h5>
+                                                            <div class="dropdown-divider mt-2 mb-4"
+                                                                style="margin: 0; border-top: 2px solid #e3e5e7;">
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <h6 class="text-white">
+
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+
+                                                            </div>
+
+                                                            <div class="row">
+                                                                <div class="col-10 mx-auto" style="max-width: 342px;">
+                                                                    <div class="text-center">
+                                                                        <button type="button" id="settings-google-login"
+                                                                            class="btn btn-success btn-rounded btn-md my-0">Login</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="mb-4"></div>
+                                                            <!--Accordion wrapper-->
+                                                            <div class="accordion md-accordion" id="accordionEx"
+                                                                role="tablist" aria-multiselectable="true"
+                                                                style="display: none">
+
+                                                                <!-- Accordion card -->
+                                                                <div class="card dark-edition">
+
+                                                                    <!-- Card header -->
+                                                                    <div class="card-header" role="tab" id="heading01">
+                                                                        <a data-toggle="collapse"
+                                                                            data-parent="#accordionEx"
+                                                                            href="#collapse01" aria-expanded="true"
+                                                                            aria-controls="collapse01">
+                                                                            <h6 class="mb-0">
+                                                                                Show Accounts
+                                                                            </h6>
+                                                                        </a>
+                                                                    </div>
+
+                                                                    <!-- Card body -->
+                                                                    <div id="collapse01" class="collapse"
+                                                                        role="tabpanel" aria-labelledby="heading01"
+                                                                        data-parent="#accordionEx">
+                                                                        <div class="card-body p-0">
+                                                                            <div class="row">
+                                                                                <div class="col-12">
+                                                                                    <div class="settings-ac-table01">
+                                                                                        <table
+                                                                                            class="table table-hover table-bordered text-white"
+                                                                                            style="user-select: none;">
+                                                                                            <thead>
+                                                                                                <tr>
+                                                                                                    <th scope="col">
+                                                                                                        ID
+                                                                                                    </th>
+                                                                                                    <th scope="col">
+                                                                                                        Email</th>
+                                                                                                    <th scope="col"
+                                                                                                        style="width: 128px;">
+                                                                                                        Actions</th>
+                                                                                                </tr>
+                                                                                            </thead>
+                                                                                            <tbody>
+                                                                                                <tr
+                                                                                                    style="display: none">
+                                                                                                    <th scope="row">
+                                                                                                        1
+                                                                                                    </th>
+                                                                                                    <th>a483h93fh9fffffffffffffffffffffffffff43@yahoo.co.jp
+                                                                                                    </th>
+                                                                                                    <td>
+                                                                                                        <span
+                                                                                                            class="table-actions">
+                                                                                                            <button
+                                                                                                                type="button"
+                                                                                                                class="btn btn-dark btn-rounded btn-sm0 my-0 mx-0">Edit</button>
+                                                                                                            <button
+                                                                                                                type="button"
+                                                                                                                class="btn btn-danger btn-rounded btn-sm0 my-0 mx-0"><i
+                                                                                                                    class="fa fa-trash-o fa-c001"></i></button>
+                                                                                                        </span>
+                                                                                                    </td>
+                                                                                                </tr>
+                                                                                            </tbody>
+                                                                                        </table>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                                <!-- Accordion card -->
+
+                                                            </div>
+                                                            <!-- Accordion wrapper -->
+
+                                                            <div class="row">
+                                                                <div class="col-6">
+                                                                    <h6 class="text-white">
+
+                                                                    </h6>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="tab-pane fade" id="list-log" role="tabpanel"
+                                                aria-labelledby="list-log-list">...</div>
+                                            <div class="tab-pane fade" id="list-settings" role="tabpanel"
+                                                aria-labelledby="list-settings-list">...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Panel 3 -->
+
+            </div>
+            <!-- Tab panels -->
+
+            <div href="/suping/home">
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="basicExampleModal" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body" style="margin-bottomx: 30px;">
+                            <div class="row" style="display: none">
+                                <div class="col-6 mx-auto">
+                                    <select class="mdb-select md-form" searchable="Search here..">
+                                        <optgroup label="general">
+                                            <option value="1">Supreme</option>
+                                            <option value="2">SNKRS</option>
+                                            <option value="3">Atmos</option>
+                                            <option value="4">Adidas</option>
+                                        </optgroup>
+                                        <optgroup label="楽天">
+                                            <option value="200">yamaotoko</option>
+                                            <option value="201">mitan</option>
+                                            <option value="202">project1-6</option>
+                                            <option value="203">rakutenTest</option>
+                                        </optgroup>
+                                    </select>
+                                    <!--
+                                <button class="btn-save btn btn-primary btn-md mt-2 tbtn-save">Save</button>
+                                -->
+                                </div>
+                            </div>
+                            <div class="mb-0"></div>
+                            <div class="row">
+                                <div id="tasks-modal1" class="col-12 mx-auto rounded">
+                                    <div id="task-rt-select" class="col-6 mx-auto pb-0">
+                                        <select class="mdb-select md-form text-black" searchable="Search here..">
+                                            <optgroup label="general">
+                                                <option value="1">Supreme</option>
+                                                <option value="2">SNKRS</option>
+                                                <option value="3">Atmos</option>
+                                                <option value="4">Adidas</option>
+                                            </optgroup>
+                                            <optgroup label="楽天">
+                                                <option value="200">yamaotoko</option>
+                                                <option value="201">mitan</option>
+                                                <option value="202">project1-6</option>
+                                                <option value="203">rakutenTest</option>
+                                            </optgroup>
+                                        </select>
+                                        <!--
+                                            <button class="btn-save btn btn-primary btn-md mt-2 tbtn-save">Save</button>
+                                            -->
+                                    </div>
+
+                                    <div class="form-group m-1 tf-eq0">
+                                        <!--
+                                        <div class="mx-auto text-center">
+                                            <a class="mr-2">Size</a>
+                                            <input class="form-control col-2" type="number" value="21" step="0.5"
+                                                id="example-number-input" style="display: inline;">
+                                        </div>
+                                        -->
+                                        <div class="col-11 mx-auto pt-0">
+                                            <!--Material textarea-->
+                                            <div class="md-form mb-0">
+                                                <textarea type="text" id="form7"
+                                                    class="md-textarea form-control pt-2 border default shadow unresizable"
+                                                    rows="1"></textarea>
+                                                <label for="form7" style="left: 1px; top: 6px">Keywords,
+                                                    URLs</label>
+                                            </div>
+                                            <div class="mx-auto mt-2"
+                                                style="display: flex;max-width: 306px;height:70px;position: relative;top: -10px;">
+                                                <div class="md-form mr-3" style="margin-leftx: 50px ;max-widthx: 100px">
+                                                    <input id="task-item-style" type="text"
+                                                        class="form-control form-control-sm text-center">
+                                                    <label for="task-item-style" style="top: 5px; left: 1px;"
+                                                        class="">Style</label>
+                                                </div>
+                                                <div class="md-form" style="max-widthx: 100px">
+                                                    <input id="task-item-size" type="text"
+                                                        class="form-control form-control-sm text-center">
+                                                    <label for="task-item-size" style="top: 5px; left: 1px;"
+                                                        class="">Size</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 mx-auto">
+                                                <select class="mdb-select md-form mt-0 task-item-categories text-black"
+                                                    searchable="Search here..">
+                                                    <optgroup label="Categories">
+                                                        <option value="1">Jackets</option>
+                                                        <option value="2">Coats</option>
+                                                        <option value="3">Shirts</option>
+                                                        <option value="4">Tops/Sweaters</option>
+                                                        <option value="5">Sweatshirts</option>
+                                                        <option value="6">Pants</option>
+                                                        <option value="7">Shorts</option>
+                                                        <option value="8">T-Shirts</option>
+                                                        <option value="9">Hats</option>
+                                                        <option value="10">Bags</option>
+                                                        <option value="11">Accessories</option>
+                                                        <option value="12">Shoes</option>
+                                                        <option value="13">Skate</option>
+                                                    </optgroup>
+                                                </select>
+                                            </div>
+                                            <div class="pb-4" style="padding-top: 32px;">
+                                                <div class="mx-auto" style="">
+                                                    <div class="input-group date" id="datetimepicker-demo"
+                                                        data-target-input="nearest">
+                                                        <input type="text"
+                                                            class="form-control datetimepicker-input text-center2"
+                                                            data-target="#datetimepicker-demo" />
+                                                        <div class="input-group-append"
+                                                            data-target="#datetimepicker-demo"
+                                                            data-toggle="datetimepicker">
+                                                            <div class="input-group-text"><i class="fa fa-calendar"></i>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div style="display: none;">
+                                                        <div class="md-form ml-4">
+                                                            <input placeholder="" type="text" id="input_date"
+                                                                class="form-control datepicker text-center">
+                                                            <label for="date-picker-example"
+                                                                class="active active">Date</label>
+                                                        </div>
+                                                        <div class="md-form">
+                                                            <input placeholder="" type="text" id="input_time"
+                                                                class="form-control timepicker text-center">
+                                                            <label for="input_time" class="active active">Start
+                                                                Time</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="ml-3" style="display: flex;">
+                                                <button type="button" id="taccount-selector"
+                                                    class="btn btn-outline-default btn-rounded waves-effect"
+                                                    style="padding: 8px 18px;">Account</button>
+                                                <button type="button" id="tproxy-selector"
+                                                    class="btn btn-outline-default btn-rounded waves-effect"
+                                                    style="padding: 8px 26px;">Proxy</button>
+                                                <button type="button" id="tbilling-selector"
+                                                    class="btn btn-outline-default btn-rounded waves-effect"
+                                                    style="padding: 8px 24px;">Billing</button>
+                                            </div>
+                                            <div class="text-center mt-2 ml-2"><button type="button"
+                                                    id="toption-selector"
+                                                    class="btn btn-outline-default btn-rounded waves-effect"
+                                                    style="padding: 8px 26px;">Options</button></div>
+                                        </div>
+                                        <script>
+                                            if (1 == 3)
+                                                $('.tbtn-save').on('click', () => {
+                                                    var options = $('li.optgroup-option.active');
+                                                    options.each((e) => {
+                                                        console.log($.trim(options.eq(e).text()));
+                                                    });
+                                                });
+                                        </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <input id="task-creation-quantity" class="form-control form-control-sm mx-auto text-center"
+                                type="text" placeholder="quantity" style="max-width: 100px" value="1">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal"
+                                style="padding: .58rem 1.4rem;font-size: 13px;">Close</button>
+                            <button type="button" id="add-task-btn" class="btn btn-primary" data-dismiss="modal"
+                                style="padding: .58rem 1.4rem;font-size: 13px;">Add
+                                Task(s)</button>
+                            <button type="button" id="edit-task-btn" class="btn btn-primary" data-dismiss="modal"
+                                style="display: none">Save Task</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal 2-->
+            <div class="modal fade" id="basicExampleModal2" tabindex="-1" role="dialog"
+                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document" style="max-width: 87% !important;margin: 2.4rem auto;">
+                    <div class="modal-content dark-edition">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body col-12" style="margin-bottom: 10px;">
+                            <div class="row">
+                                <div class="col-12 mx-auto">
+                                    <webviewa src="about:blank" id="wv" preload="src/assets/js/preload.js"
+                                        style="height: 66vh;">
+                                    </webviewa>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" id="save_rakuten_state-btn" class="btn btn-primary btn-sm0"
+                                data-dismiss="modal">Save the state</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END -->
+            <!-- Error Modal -->
+            <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="errorModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="errorModal">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End -->
+            <!-- Central Modal Small -->
+            <div class="modal fade" id="centralModalSm" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel"
+                aria-hidden="true">
+                <!-- Change class .modal-sm to change the size of the modal -->
+                <div class="modal-dialog modal-sm" role="document"
+                    style="padding-top: 17vh; max-width: 390px !important;">
+                    <div class="modal-content shadow">
+                        <div class="modal-header">
+                            <h4 class="modal-title w-100" id="confirmModalLabel">You want to perform this action?</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" style="min-height: 168px; max-height: 168px; overflow-y: scroll">
+                            <div class="wrap">
+                                <div list="accounts"></div>
+                                <div list="proxies"></div>
+                                <div list="billings"></div>
+                                <div list="options">
+                                    <div class="p-0 text-center">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input"
+                                                id="defaultunChecked_pad00" disabled="">
+                                            <label class="custom-control-label"
+                                                for="defaultunChecked_pad00">リストックを監視</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input"
+                                                id="defaultunChecked_pad01" disabled="">
+                                            <label class="custom-control-label"
+                                                for="defaultunChecked_pad01">お知らせを受信</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input"
+                                                id="defaultunChecked_pad02" disabled="">
+                                            <label class="custom-control-label"
+                                                for="defaultunChecked_pad02">レビューをする</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input"
+                                                id="defaultunChecked_pad03" disabled="">
+                                            <label class="custom-control-label"
+                                                for="defaultunChecked_pad03">お気に入りに追加</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="defaultunChecked1"
+                                                checked="">
+                                            <label class="custom-control-label" for="defaultunChecked1">モバイル版を使用</label>
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="defaultunChecked2">
+                                            <label class="custom-control-label" for="defaultunChecked2">リロード間隔</label>
+                                        </div>
+                                        <div id="opreloadinterval" class="pl-2 mt-2" style="display: none;">
+                                            <input class="form-control form-control-sm mx-auto" type="text"
+                                                placeholder="" style="max-width: 100px">
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="defaultunChecked3">
+                                            <label class="custom-control-label" for="defaultunChecked3">チェックイン遅延</label>
+                                        </div>
+                                        <div id="opcheckindelay" class="pl-2 mt-2" style="display: none;">
+                                            <input class="form-control form-control-sm mx-auto" type="text"
+                                                placeholder="" style="max-width: 100px">
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="defaultunChecked4">
+                                            <label class="custom-control-label"
+                                                for="defaultunChecked4">チェックアウト遅延</label>
+                                        </div>
+                                        <div id="opcheckoutdelay" class="pl-2 mt-2">
+                                            <input class="form-control form-control-sm mx-auto" type="text"
+                                                placeholder="" style="max-width: 100px; display: none;">
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="defaultunChecked5">
+                                            <label class="custom-control-label"
+                                                for="defaultunChecked5">失敗時の試行の回数</label>
+                                        </div>
+                                        <div id="opattemptcount" class="pl-2 mt-2">
+                                            <input class="form-control form-control-sm mx-auto" type="text"
+                                                placeholder="" style="max-width: 100px; display: none;">
+                                        </div>
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input" id="defaultunChecked6">
+                                            <label class="custom-control-label" for="defaultunChecked6">試行の遅延</label>
+                                        </div>
+                                        <div id="opattemptdelay" class="pl-2 mt-2">
+                                            <input class="form-control form-control-sm mx-auto" type="text"
+                                                placeholder="100ms" style="max-width: 100px; display: none;">
+                                        </div>
+                                        <!-- リストック待機のリロード間隔 -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary btn-sm">Save changes</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Central Modal Small -->
+
+            <!-- Central Modal Small -->
+            <div class="modal fade" id="centralModalSm2" tabindex="-1" role="dialog"
+                aria-labelledby="confirmModalLabel2" aria-hidden="true">
+                <!-- Change class .modal-sm to change the size of the modal -->
+                <div class="modal-dialog modal-sm" role="document"
+                    style="padding-top: 17vh; max-width: 390px !important;">
+                    <div class="modal-content shadow">
+                        <div class="modal-header">
+                            <h4 class="modal-title w-100" id="confirmModalLabel2">Are you sure?</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" style="">
+                            <div class="wrap" mode="create">
+                                <div action="create">
+                                    <input type="text" id="billing-profile" class="form-control default"
+                                        placeholder="Profile Name">
+                                    <div class="form-check float-right" style="display: none">
+                                        <input type="checkbox" class="form-check-input" id="materialUnchecked">
+                                        <label class="form-check-label mt-2" for="materialUnchecked"
+                                            style="padding-left: 30px">New</label>
+                                    </div>
+                                </div>
+                                <div action="save" class="my-2">
+                                    the inputs data will be saved into the profile that you selected if you perform this
+                                    action.
+                                </div>
+                                <div action="delete">
+                                    <div style="margin-top: 70px">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary btn-sm">Sure</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Central Modal Small -->
+
+            <!-- Central Modal Small -->
+            <div class="modal fade" id="centralModalSm3" tabindex="-1" role="dialog"
+                aria-labelledby="confirmModalLabel3" aria-hidden="true">
+                <!-- Change class .modal-sm to change the size of the modal -->
+                <div class="modal-dialog modal-sm" role="document"
+                    style="padding-top: 17vh; max-width: 390px !important;">
+                    <div class="modal-content shadow">
+                        <div class="modal-header">
+                            <h4 class="modal-title w-100" id="confirmModalLabel3">Are you sure?</h4>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body" style="">
+                            <div class="wrap" mode="create">
+                                <div action="create">
+                                    <div class="mx-auto text-center mb-4 mt-1"
+                                        style="max-width: 136px; margin-bottom: 50px">
+                                        <label class="mb-1 ml-2">Website</label>
+                                        <select
+                                            class="mdb-select md-form colorful-select dropdown-primary mt-0 retailer selector pattern1 text-black">
+                                            <option value="1">Supreme</option>
+                                            <option value="2">SNKRS</option>
+                                        </select>
+                                    </div>
+                                    <textarea id="proxy-server" class="form-control default mb-3 shadow unresizable"
+                                        placeholder="Proxy Server"
+                                        style="height: 230px; overflow-y: scroll;"></textarea>
+                                    <input type="text" id="proxy-profile2" class="form-control default mb-1"
+                                        style="width: 220px; display:none" placeholder="Profile Name">
+                                </div>
+                                <div action="check">
+                                    <div style="margin-top: 70px">
+                                        Check desu
+                                    </div>
+                                </div>
+                                <div action="edit">
+                                    <div style="margin-top: 70px">
+                                        Edit desu
+                                    </div>
+                                </div>
+                                <div action="delete">
+                                    <div class="my-2">
+                                        the proxies will be deleted if you perform this action.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary btn-sm">Sure</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Central Modal Small -->
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer font-small fixed-bottom pl-0" style="display: none">
+        <div class="">
+            <img class="m-2" id="pi" width="38" height="38" style="border-radius: 50%;    border:2px solid white">
+        </div>
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2018 Copyright:
+            <a href="https://mdbootstrap.com/education/bootstrap/"> lazyboot.dev</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+    <!-- SCRIPTS -->
+    <!-- Insert this line above script imports  -->
+    <script>if (typeof module === 'object') { window.module = module; module = undefined; }</script>
+    <!-- JQuery -->
+    <script type="text/javascript" src="src/assets/lib/mdb-4.5.16/js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="src/assets/lib/mdb-4.5.16/js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="src/assets/lib/mdb-4.5.16/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="src/assets/lib/mdb-4.5.16/js/mdb.min.js"></script>
+    <!-- Page.js -->
+    <script type="text/javascript" src="src/assets/lib/page.js/page.js"></script>
+    <!-- Router -->
+    <script type="text/javascript" src="src/assets/js/router.js"></script>
+    <!-- Encoding -->
+    <script type="text/javascript" src="src/assets/lib/ecl.js/ecl.js"></script>
+    <!-- Encoding -->
+    <script type="text/javascript" src="src/assets/lib/swiper-4.5.0/dist/js/swiper.min.js"></script>
+    <!-- Utils -->
+    <script type="text/javascript" src="src/assets/js/utils.js"></script>
+    <!-- Action -->
+    <script type="text/javascript" src="src/assets/js/action.js"></script>
+    <!-- Render -->
+    <script type="text/javascript" src="src/assets/js/render.js"></script>
+    <!-- UI -->
+    <script type="text/javascript" src="src/assets/js/ui.js"></script>
+    <!-- App -->
+    <script type="text/javascript" src="src/assets/js/app.js"></script>
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment-with-locales.min.js"></script>
+    <script type="text/javascript"
+        src="src/assets/lib/Bootstrap-4-Date-Time-Picker/src/docs/theme/js/tempusdominus-bootstrap-4.js"></script>
+
+    <script>
+        $('#datetimepicker-demo').datetimepicker();
+
+        // SideNav Initialization
+        $('.button-collapse').sideNav();
+        new WOW().init();
+
+        // Material Select Initialization
+        $('.mdb-select').materialSelect();
+
+        $('#input_time').pickatime({
+            // Light or Dark theme
+            darktheme: true
+        });
+
+        $('#input_date').pickadate({
+            selectYears: true,
+            selectMonths: true,
+            format: 'yyyy/mm/dd',
+            formatSubmit: 'yyyy/mm/dd',
+            hiddenPrefix: 'prefix__',
+            hiddenSuffix: '__suffix'
+        });
+
+        if (333 == 3) {
+            window.webview = document.getElementById('wv');
+
+            var curAccount = ['a@g.cc', 'Manko123'];
+
+            setTimeout(() => {
+                const loadPage = () => {
+                    webview.send('getAccount', curAccount);
+                    webview.removeEventListener('dom-ready', loadPage);
+                };
+                webview.loadURL('https://store.nike.com/jp/ja_jp/?l=shop,login_register');
+                webview.addEventListener('dom-ready', loadPage);
+            }, 43431000);
+
+            webview.addEventListener('ipc-message', function (event) {
+                switch (event.channel) {
+                    case "access_token":
+                        var access_token = JSON.parse(event.args[0]).access_token;
+                        nikeLoginCallback(access_token, curAccount);
+                        webview.loadURL('about:blank');
+                        //nike(event.args[0]);
+                        break;
+                }
+            });
+        }
+
+        if (1 == 2) {
+            function updateProductName(task_id, name) {
+                var tbody = $('#task-table > tbody');
+                var tr = tbody.find('tr[task_id="' + task_id + '"]');
+                var columns = tr.children();
+
+                columns.eq(2).text(name);
+            }
+
+            window.webview = document.getElementById('wv');
+
+            var item_name = '';
+            webview.addEventListener('ipc-message', function (event) {
+                switch (event.channel) {
+                    case "rakuten_item_name":
+                        console.log(event);
+                        item_name = event.args[0];
+                        console.log('7aa', item_name);
+                        updateProductName(lazyb.tasks.slice(-1)[0].id, item_name);
+                        break;
+                }
+            });
+        }
+
+        if (1 == 1) {
+
+        }
+
+        $(document).ready(() => {
+
+            $('#mdb-preloader').fadeOut(200).remove();
+            $('main > div').fadeIn(200);
+        });
+
+        $('#TitleBarClose').on('click', () => { ipcRenderer.send('window-close') });
+        $('#TitleBarMaximize').on('click', () => { ipcRenderer.send('window-maximize') });
+        $('#TitleBarMinimize').on('click', () => { ipcRenderer.send('window-minimize') });
+
+        if (1 == 2) {
+            for (var i = 0; i < 1; i++)
+                lazyb_captcha['tokens'].push({
+                    response: '',
+                    expire: new Date().getTime() + 50 * 1000
+                });
+        }
+
+        ipcRenderer.on('recaptcha-token', (event, token) => {
+            lazyb_captcha['tokens'].push({
+                response: token,
+                expire: new Date().getTime() + 50 * 1000
+            })
+            console.log('%c[Supreme] -> Token: %c' + token, 'font-size: 16px;', 'color: red; font-size: 16px;');
+        });
+
+        ipcRenderer.on('pi_cb', (event, pi) => {
+            if (pi == '')
+                $('#pi').attr('src', 'https://pbs.twimg.com/profile_images/747773184863313920/SRFuZqcW_400x400.jpg');
+            else
+                $('#pi').attr('src', pi);
+        });
+        ipcRenderer.send('pi');
+
+        //$('#task-table').resizableColumns();
+
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'vertical',
+            keyboard: true
+        });
+
+        window.onunhandledrejection = function (e) {
+            Log('');
+            Log('[system] unexpected -> ' + e.reason.message);
+            Log('[system] stacktrace -> ' + e.reason.stack);
+        }
+        window.onpossiblyunhandledexception = function () {
+            console.log(arguments);
+            window.onerror.apply(this, arguments); // call
+        }
+        window.onerror = function (e) {
+            console.log(e);
+            if (typeof e === 'string') {
+                Log('');
+                Log(now() + ' [system] unexpected -> ' + e);
+            } else {
+                var stack = e.error.stack;
+                var message = e.error.toString();
+                Log('');
+                Log(now() + ' [system] unexpected -> ' + message);
+                Log(now() + ' [system] stacktrace -> ' + stack);
+            }
+        }
+
+
+    </script>
+    <!-- Insert this line after script imports -->
+    <script>if (window.module) module = window.module;</script>
+</body>
+
+</html>
