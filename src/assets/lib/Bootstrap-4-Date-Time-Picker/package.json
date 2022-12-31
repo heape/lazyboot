@@ -41,7 +41,7 @@
     "babel-plugin-transform-es2015-modules-strip": "^0.1.0",
     "babel-preset-es2015": "^6.24.1",
     "grunt": "^1.0.3",
-    "grunt-babel": "6.0.0",
+    "grunt-babel": "8.0.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "^1.1.0",
